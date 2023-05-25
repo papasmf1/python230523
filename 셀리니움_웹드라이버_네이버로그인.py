@@ -1,6 +1,6 @@
 # 셀리니움_웹드라이버_네이버로그인.py
 # pip install clipboard 
-
+# 스트레스 테스트 도구(셀리니움)
 from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.common.keys import Keys
@@ -19,6 +19,7 @@ driver.get('https://nid.naver.com/nidlogin.login')
 loginID = "kim"
 clipboard.copy(loginID)
 #mac은 COMMAND, window는 CONTROL
+#XPath 계층 수식 
 driver.find_element(By.XPATH,'//*[@id="id"]').send_keys(Keys.CONTROL, 'v')
 
 loginPW = "1234"
