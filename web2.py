@@ -2,6 +2,8 @@
 from bs4 import BeautifulSoup
 import requests
 
+
+
 url = "https://www.daangn.com/"
 response = requests.get(url)
 soup = BeautifulSoup(response.text, "html.parser")
